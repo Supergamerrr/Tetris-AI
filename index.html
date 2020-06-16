@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="js/gameManager.js"></script>
+    <script src="js/Piece.js"></script>
+    <script src="js/grid.js"></script>
+    <script src="js/constants.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/ai.js"></script>
+    <script src="js/stopwatch.js"></script>
+    <script src="js/tuner.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="game-container" id='game-container'>
+        <canvas id="game-canvas" class="game-canvas" height="400"  width="200"></canvas>
+    </div>
+    <div class="sideBoard">
+        <div class="score" id ='score'>0</div>
+        <div class="next-container" id='next-container'>
+            <canvas id="next-canvas" class="next-canvas" height="80"  width="80"></canvas>
+        </div>
+        <div class='params-container' id='params-container'></div>
+        <button id='restart-button' class='restart-button'>Restart</button>
+        <button id='ai-button' class='ai-button'>Start AI</button>
+    </div>
+    <script>
+        var manager = new GameManager();
+    </script>
+</div>
+</body>
+</html>
